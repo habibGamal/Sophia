@@ -1,0 +1,497 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+  font-family: "Bahnschrift";
+}
+
+ul > li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.features, .show, .goods, .brands {
+  margin: 60px 0;
+}
+
+.column > li {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.upper-case {
+  text-transform: uppercase !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  border-radius: 0;
+  border: none;
+  font-size: 1.2em;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-black {
+  background-color: #000;
+}
+
+.btn-orange {
+  background-color: #f09d66;
+}
+
+.em-1-1 {
+  font-size: 1.1em;
+}
+
+.em-1-2 {
+  font-size: 1.2em;
+}
+
+.em-1-3 {
+  font-size: 1.3em;
+}
+
+.em-1-4 {
+  font-size: 1.4em;
+}
+
+.em-1-5 {
+  font-size: 1.5em;
+}
+
+.em-1-6 {
+  font-size: 1.6em;
+}
+
+.em-1-7 {
+  font-size: 1.7em;
+}
+
+.em-1-8 {
+  font-size: 1.8em;
+}
+
+.em-1-9 {
+  font-size: 1.9em;
+}
+
+.em-2 {
+  font-size: 2em;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-gray {
+  color: #7f7e7e !important;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.title > h2 {
+  display: inline-block;
+  margin: 20px;
+}
+.title > svg {
+  transform: rotateZ(45deg);
+  color: #d9bf8f;
+}
+.title::before {
+  content: "";
+  display: inline-block;
+  max-width: 30%;
+  min-width: 10%;
+  height: 1px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  background-color: #f2f2f2;
+}
+.title::after {
+  content: "";
+  display: inline-block;
+  max-width: 30%;
+  min-width: 10%;
+  height: 1px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  background-color: #f2f2f2;
+}
+
+.d-block {
+  display: block;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.top-bar {
+  background-color: #f2f2f2;
+  padding: 0.5em 0;
+}
+.top-bar .call > svg {
+  margin-right: 1em;
+}
+
+.pages > ul > li:not(.last)::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 12px;
+  margin-left: 20px;
+  background-color: #000;
+}
+
+nav.main {
+  margin: 10px;
+}
+nav.main .icons > svg {
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 10px;
+}
+nav.main .extra {
+  display: flex;
+}
+
+.content {
+  position: relative;
+}
+.content > .slider {
+  position: relative;
+  overflow: hidden;
+  min-height: 645px;
+}
+.content > .slider > img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.content > .box-sale {
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content > .box-sale > .context {
+  margin-bottom: 70px;
+  border: 1px solid #fff;
+  position: relative;
+  padding: 0 30px;
+}
+.content > .box-sale > .context::after {
+  content: "";
+  display: block;
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  border: 1px solid #fff;
+  top: -5%;
+  left: -5%;
+}
+.content > .box-sale > .context span {
+  display: block;
+  color: #fff;
+  margin: 10px;
+}
+.content > .box-sale > .balls {
+  margin-top: 150px;
+}
+.content > .box-sale > .balls > svg {
+  margin: 10px;
+  transform: rotateZ(45deg);
+  font-size: 0.8em;
+}
+.content > .box-sale > .balls > svg:not(.active) {
+  color: #b2b2b2;
+}
+
+.features > .container > .content > .feature {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+}
+.features > .container > .content > .feature > .context > .icon {
+  margin: 10px;
+}
+.features > .container > .content > .feature > .context > .icon > svg {
+  font-size: 3rem;
+}
+.features > .container > .content > .feature > .context > .text > h4 {
+  font-size: 1.4rem;
+}
+.features > .container > .content > .feature > .context > .icon, .features > .container > .content > .feature > .context > .text {
+  display: inline-block;
+  margin-top: 20px;
+}
+.features > .container > .content > .feature:nth-child(1) {
+  background-image: url(../images/bg_1.png);
+}
+.features > .container > .content > .feature:nth-child(2) {
+  background-image: url(../images/bg_2.png);
+}
+.features > .container > .content > .feature:nth-child(3) {
+  background-image: url(../images/bg_3.png);
+}
+
+.show .content > .boxes {
+  align-items: start;
+}
+.show .content > .boxes .group {
+  width: 33%;
+}
+.show .content > .boxes .group > div {
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+}
+.show .content > .boxes .group > div > img {
+  width: 100%;
+}
+.show .content > .boxes .group > div .border {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border: 1px solid #ffffff;
+  top: 5%;
+  left: 5%;
+}
+.show .content > .boxes .group > .item2 .border {
+  height: 75%;
+}
+
+.goods > .container > .content > .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.goods > .container > .content > .boxes > .product {
+  width: 300px;
+  position: relative;
+  margin: 20px 0;
+}
+.goods > .container > .content > .boxes > .product > .semi-btn {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #000;
+}
+.goods > .container > .content > .boxes > .product > .semi-btn::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 99%;
+  top: 0%;
+  border-left: 21.5px solid #000;
+  border-bottom: 21.5px solid #000;
+  border-top: 21.5px solid transparent;
+  border-right: 21.5px solid transparent;
+}
+.goods > .container > .content > .boxes > .product > .semi-btn::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  right: 99%;
+  top: 0%;
+  border-right: 21.5px solid #000;
+  border-bottom: 21.5px solid #000;
+  border-top: 21.5px solid transparent;
+  border-left: 21.5px solid transparent;
+}
+
+.brands .boxes {
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.brands .boxes > .brand {
+  margin: 30px 0;
+  width: 250px;
+  text-align: center;
+}
+
+.opinions > .content {
+  position: relative;
+  padding: 3em 0;
+}
+.opinions > .content > img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.opinions > .content > .container > .context {
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.opinions > .content > .container > .context .box:nth-child(2) .say .art, .opinions > .content > .container > .context .box:nth-child(2) .say .info {
+  direction: rtl;
+}
+.opinions > .content > .container > .context .art {
+  margin: 5px;
+  margin-bottom: 50px;
+}
+.opinions > .content > .container > .context .info {
+  line-height: 1.5;
+  font-size: 1.3em;
+}
+
+footer {
+  background-color: #141414;
+  padding-top: 50px;
+}
+footer h4 {
+  color: #fff;
+}
+footer li a {
+  color: #737373;
+}
+footer li a:hover {
+  text-decoration: underline;
+}
+footer .flex {
+  flex-wrap: wrap;
+}
+footer .flex > div {
+  margin: 1em 0;
+}
+footer .contact .stay-con > svg {
+  font-size: 2em;
+  color: #fff;
+  margin: 20px;
+}
+footer .contact .subs > input {
+  border: none;
+  padding: 15px;
+}
+footer .contact .subs > input, footer .contact .subs > button {
+  margin-top: 15px;
+}
+footer > p {
+  padding: 2em;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    text-align: center;
+  }
+  .top-bar .flex {
+    flex-direction: column;
+  }
+  .top-bar .flex > div {
+    margin: 0.4em 0;
+  }
+
+  nav.main .flex {
+    flex-direction: column;
+  }
+  nav.main .flex .logo {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .show .content > .boxes {
+    flex-wrap: wrap;
+  }
+  .show .content > .boxes .group {
+    width: 55%;
+  }
+}
+@media (min-width: 967px) and (max-width: 1200px) {
+  .features > .container > .content > .feature {
+    width: 33%;
+    display: inline-block;
+  }
+  .features > .container > .content > .feature > .context > .icon > svg {
+    font-size: 2rem;
+    margin-bottom: 0.3em;
+  }
+  .features > .container > .content > .feature > .context > .text > h4 {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .features > .container > .content > .feature {
+    width: 33%;
+    display: inline-block;
+  }
+  .features > .container > .content > .feature > .context > .icon > svg {
+    font-size: 3rem;
+    margin-bottom: 0em;
+  }
+  .features > .container > .content > .feature > .context > .text > h4 {
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
